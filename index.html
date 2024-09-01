@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta
+     name="viewport"
+     content="width=device-width, initial-scale=1.0">
+    <title> Media Queries </title>
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+    background-color:bisque;
+    }
+
+    .page-heading{
+       text-align: center;
+       font-size: 60px;
+
+    }
+
+    .know-more{
+       position: fixed;
+       right: 10px;
+       bottom: 80px;
+       height: 80px;
+       background-color:rgb(226, 98, 52);
+       border-radius: 50%;
+       padding: 10px;
+       border: 2px solid rgb(146, 15, 37) ;
+       cursor: pointer;
+    }
+
+    .header-content{
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       margin-top: 50px;
+       flex-wrap: wrap;
+       
+    }
+
+    .Hotel{
+      width: 500px;
+      border: 2px solid black;
+    }
+
+    .content{
+      width: 600px;
+      font-size: 25px;
+    }
+
+    .navbar{
+      background-color: green;
+      display: flex;
+      align-self: center;
+      padding: 5px 40px;
+      color: white;
+      border: 1px solid black;
+    }
+
+    .flag-emoji{
+      font-size: 30px;
+    }
+
+    .menus{
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    }
+
+    .menu-item{
+     margin-right: 30px;
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+    }
+
+    .menu-item:hover{
+     color:orangered;
+    }
+
+    .menu-icon{
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+    }
+
+/* Mobile Device */
+    @media screen and (max-width: 500px){
+    .page-heading{
+            font-size: 40px;
+        }
+
+    .know-more{
+        height: 40px;
+        width: 40px;
+    }
+
+    .Hotel{
+        width:350px;
+    }
+
+    .content{
+        font-size: 20px;
+    }
+
+    .secondary-content{
+        display: none;
+    }
+
+    .menu-text{
+        display: none;
+    }
+
+    .flag-emoji{
+        font-size: 18px;
+    }
+
+    .menus{
+        margin-left: 30px;
+    }
+
+    .menu-item{
+        margin-right: 10px;
+    }
+    }
+
+    /* Tablet Device */
+    @media screen and (min-width: 501px) and (max-width: 768px){
+    }
+
+    /* desktop Device */
+    @media screen and (min-width: 769px){
+    }
+
+</style>
+</head>
+<body>
+
+    <div class="navbar">
+      <span class="flag-emoji">Hotel book store🛕 </span>
+
+      <div class="menus">
+        <span class="menu-item">
+        <img src="location (2).png" class="menu-icon" alt="Location">
+        <span class="menu-text">
+             Location
+        </span>
+        </span>
+
+        <span class="menu-item">
+        <img src="Quality.png" class="menu-icon" alt="Quality">
+        <span class="menu-text">
+            Quality 
+        </span>  
+        </span>
+
+        <span class="menu-item">
+        <img src="namaste (1).png" class="menu-icon" alt="Culture">
+        <span class="menu-text">
+            Culture 
+        </span>
+        </span>
+
+        <span class="menu-item">
+        <img src="hotel book store.jpg" class="menu-icon" alt="Hotel book store"> 
+        <span class="menu-text">
+           Hotel book store
+        </span>
+        </span>
+
+        <span class="menu-item">
+        <img src="fresh.png" class="menu-icon" alt="Fresh food">
+        <span class="menu-text">
+           Fresh Food 
+        </span>
+        </span>
+
+        <span class="menu-item">
+        <img src="rooms.png" class="menu-icon" alt="Rooms"> 
+        <span class="menu-text">
+           Rooms
+        </span>
+        </span>
+
+        <span class="menu-item">
+        <img src="booking.png" class="menu-icon" alt="chech Booking"> 
+        <span class="menu-text">
+            Check Booking
+        </span>
+        </span>
+
+        <span class="menu-item"> 
+        <img src="facility.png" class="menu-icon" alt="Facility">
+        <span class="menu-text">
+            Facility
+        </span> 
+        </span>
+
+      </div>
+    </div>
+
+    <h1 class="page-heading"> 
+        Hotel Booking 🏩
+    </h1>
+
+<div class="header-content">
+    <img src="hotel 11.jpg" class="Hotel" alt="Hotel booking">
+
+    <div class="content">
+        <p>
+            Paragraph Resort & Spa, Shekvetili — a unique place where perfect blend of sea and forest
+            landscape welcomes bald contemporary design engraving new paragraph in the history of fabled 
+            Georgian hospitality. Chic and sophisticated, the exotically inspired retreat creates profound
+            feeling of divine harmony and seamless relaxation by the Black Sea Coast.
+        </p>
+
+        <p class="secondary-content">
+            Enjoy our SPA with luxurious and award-winning brands, results-based Aromatherapy Skincare 
+            and anti-ageing procedures for natural beauty. 
+        </p>
+
+    </div>
+</div>
+
+<a href="https://en.wikipedia.org/wiki/Hotel" targer="black">
+    <img src="click.png" class="know-more" alt="Click here to know more">
+</a> 
+</body>
+</html>
